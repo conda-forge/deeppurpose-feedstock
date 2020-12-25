@@ -1,5 +1,5 @@
 {% set name = "deeppurpose" %}
-{% set version = "0.0.2" %}
+{% set version = "0.0.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://github.com/kexinhuang12345/DeepPurpose/archive/v{{ version }}.tar.gz
-  sha256: 3090375c9fca73ff24c4e0c2c82f0c3fca7c96e77eac66ba4ab5f84f28697a1c
-  
+  sha256: a5be5f68b0872b1e7a5ac84f1061eb84b0ede9a798bbe591213aba5d2a8e4877
+
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -41,8 +41,7 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: 'A Deep Learning Library for Compound and Protein Modeling DTI, Drug Property, PPI, DDI, Protein Function Prediction'
-  
+  summary: A Deep Learning Library for Compound and Protein Modeling DTI, Drug Property, PPI, DDI, Protein Function Prediction
 extra:
   recipe-maintainers:
     - kexinhuang12345
