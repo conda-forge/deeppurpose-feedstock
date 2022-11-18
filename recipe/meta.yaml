@@ -1,5 +1,5 @@
 {% set name = "deeppurpose" %}
-{% set version = "0.0.5" %}
+{% set version = "0.0.7" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/kexinhuang12345/DeepPurpose/archive/v{{ version }}.tar.gz
-  sha256: a5be5f68b0872b1e7a5ac84f1061eb84b0ede9a798bbe591213aba5d2a8e4877
+  sha256: 921f820ce7e92c5855d5908a45a6b6365ab340a78220fb7d26f0efbf9b2bc88a
 
 build:
   noarch: python
